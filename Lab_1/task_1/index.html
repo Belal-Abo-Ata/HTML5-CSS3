@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Lab 1</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/app.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Lab 1 | Video Controls</h1>
+		</header>
+		<div>
+			<video src="assest/videos/big_buck_bunny.mp4" controls data-video></video>
+			<div>
+				<div>
+					<input type="range" min="0" max="100" value="100" step="1" data-timer />
+					<span data-current-time>0:00</span>
+				</div>
+				<button data-play>Play</button>
+				<button data-pause>Pause</button>
+				<button data-forward>Forward</button>
+				<button data-backward>Backward</button>
+				<input type="range" min="0" max="100" step="1" data-volume />
+				<button data-mute>Mute</button>
+				<button data-unmute>Unmute</button>
+				<input type="range" min="0" max="2" step="0.25" value="1" data-speed />
+				<button data-full-screen>fullscreen</button>
+			</div>
+		</div>
+	</body>
+</html>
