@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/app.js" defer></script>
+	</head>
+	<body>
+		<h1>Change Email Address</h1>
+		<form method="get">
+			<input class="username" type="text" pattern="^[a-zA-z]+$" required />
+			<p>The required user name may only be a series of alphabetical characters</p>
+			<input class="email" type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+			<p>The required email may not include any special characters other than the '@' sign</p>
+			<button type="submit">change</button>
+		</form>
+	</body>
+</html>

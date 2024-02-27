@@ -1,0 +1,78 @@
+html,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 500px;
+	height: 800px;
+	border: 5px solid red;
+	border-radius: 3rem;
+	position: relative;
+}
+
+.a-letter {
+	font-size: 3rem;
+}
+
+.a-letter:first-of-type {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.a-letter:last-of-type {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.heart {
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	rotate: 180deg;
+}
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: '';
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: black;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+.heart:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid black;
+	position: absolute;
+	top: calc(50% + 45px);
+	left: 50%;
+	translate: -50% -50%;
+}
